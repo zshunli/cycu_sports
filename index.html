@@ -17,10 +17,10 @@
             <div class="sideMenu">
                 <div>
                     <ul class="menu">
-                        <li><a href="">場館</a></li>
-                        <li><a href="">體育室</a></li>
-                        <li><a href="">人員</a></li>
-                        <li><a href="">聯絡我們</a></li>
+                        <li><a href="" class="none">場館</a></li>
+                        <li><a href="" class="none">體育室</a></li>
+                        <li><a href="" class="none">人員</a></li>
+                        <li><a href="" class="none">聯絡我們</a></li>
                     </ul>
                 </div>
                 <label for="sideMenu-active">
@@ -30,38 +30,63 @@
         </nav>
     </header>
     <section>
-        <img src="01.jpg" class="photo">
-        <div class="pe">
-            <span>
-            <p>體育室</p>
-            <p>OFFICE OF PE</p>
-            <img>
-            <input type="button" value="沿革發展" onclick="location.href=''">
-            <input type="button" value="人員介紹" onclick="location.href=''">
-            </span>
-            <div class="content">
-                <div class="news">
-                    <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="200"
-                        scrolldelay="4" scrollamount="3">
-                        <ul>
-                            <li><a href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=44575">【體育室教學組】誠徵長期工讀生</a>
-                            </li>
-                            <li><a
-                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=34525">【體育室教學組】110-1「體育課程」線上選課說明</a>
-                            </li>
-                            <li><a href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=45242">運動證申請系統</a></li>
-                            <li><a
-                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42469">體育室重要通知：任何場館異動公告，請以本網址為主，敬請加入本場館臉書以利知道所有場館開放訊息唷。</a>
-                            </li>
-                            <li><a
-                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42471">徵求"發現中原體育園區粉絲"，意者請洽體育室營運組。</a>
-                            </li>
-                        </ul>
-                    </marquee>
+        <div>
+            <div class="slide">
+                <div>
+                    <img src="PHOTO/color.jpg" alt="pure css3 slider" />
+                </div>
+                <div>
+                    <img src="PHOTO/color2.jpg" alt="pure css3 slider" />
+                </div>
+                <div>
+                    <img src="PHOTO/color3.jpg" alt="pure css3 slider" />
+                </div>
+                <div>
+                    <img src="PHOTO/color4.jpg" alt="pure css3 slider" />
+                </div>
+                <div>
+                    <img src="PHOTO/color5.jpg" alt="pure css3 slider" />
                 </div>
             </div>
         </div>
-
+        
+        <div class="box">
+            <div class="pe">
+                <p class="pep">體育室</p>
+                <p class="pep">OFFICE OF PE</p>
+                <img src="PHOTO/color.jpg" style="width: 600px; height: 450px;">
+                <div class="buttons">
+                    <input type="button" value="沿革發展" onclick="location.href=''" class="button">
+                    <input type="button" value="人員介紹" onclick="location.href=''" class="button">
+                </div>
+            </div>
+            <div class="news">
+                <p class="newsp">最新消息</p>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="200" scrolldelay="4"
+                    scrollamount="3">
+                    <ul>
+                        <li><a target="_block"
+                                href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=44575" class="none">【體育室教學組】誠徵長期工讀生</a>
+                        </li>
+                        <li><a target="_block"
+                                href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=34525" class="none">【體育室教學組】110-1「體育課程」線上選課說明</a>
+                        </li>
+                        <li><a target="_block"
+                                href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=45242" class="none">運動證申請系統</a></li>
+                        <li><a target="_block"
+                                href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42469" class="none">體育室重要通知：任何場館異動公告，請以本網址為主，敬請加入本場館臉書以利知道所有場館開放訊息唷。</a>
+                        </li>
+                        <li><a target="_block"
+                                href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42471" class="none">徵求"發現中原體育園區粉絲"，意者請洽體育室營運組。</a>
+                        </li>
+                    </ul>
+                </marquee>
+                <a target="_block" href="https://pe.cycu.edu.tw/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/" class="newsa">
+                    more
+                </a>
+                <br>
+            </div>
+        </div>
     </section>
 </body>
 
