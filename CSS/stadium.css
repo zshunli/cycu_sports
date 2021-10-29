@@ -1,0 +1,72 @@
+	div.text{
+		font-family: Comic Sans MS;
+		font-size: 30px;
+		position: relative;
+		top: ;
+	}
+	div.one{
+    	float: left;
+    	width:400px;
+    	height:200px;
+    	font-size: 30px;
+		font-family: 微軟正黑體, Comic Sans MS;
+		
+		
+		
+	}
+
+	
+	
+	div.two{
+		
+    	width:400px;
+    	height:200px;
+		font-size: 30px;
+		font-family: 微軟正黑體, Comic Sans MS;
+		display:none;
+		z-index: 1;
+	
+		
+		
+	}
+	div.three{
+		
+    	width:400px;
+    	height:200px;
+		font-size: 30px;
+		font-family: 微軟正黑體, Comic Sans MS;
+		display:none;
+		z-index: 2;
+		
+		
+	}
+	div.text1{
+		
+		
+	}
+	div.text2{
+
+		position: relative;
+		left: 1000px;
+		top: -300px;
+		
+	}
+	
+	img.plain{
+		width: 600px;
+		height: 350px;
+
+	}
+
+
+	input.btn{
+		background-color: none;
+		font-family: Comic Sans MS;
+		font-size: 30px;
+		position: relative;
+		left: 350px;
+		top: 50px;
+		border:5px #9999FF dashed;
+
+	}
+	
