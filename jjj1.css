@@ -1,0 +1,253 @@
+@import url('https://pro.fontawesome.com/releases/v5.10.0/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+
+body {
+    
+    height: 100%;
+}
+
+.side-menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    background-color: rgb(77, 74, 74);
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    box-sizing: border-box;
+    /*可以不要出現右邊捲動欄*/
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    transition: 0.3s;
+
+}
+
+.side-menu form {
+    display: flex;
+    margin: 0 10px 50px;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.side-menu form input {
+    width: 230px;
+}
+
+.side-menu form button {
+    width: 50px;
+}
+
+.side-menu form input,
+.side-menu form button {
+    border: none;
+    padding: 5 10px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.side-menu form input:focus,
+.side-menu form button:focus {
+    outline: none;
+    /*去除內部邊框*/
+}
+
+.side-menu label {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    background-color: rgb(77, 74, 74);
+    color: #fff;
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 0 10px 10px 0;
+    z-index: 1;
+}
+
+#side-menu-switch {
+    /*隱藏checkbox*/
+    position: absolute;
+    opacity: 0;
+
+}
+
+#side-menu-switch:checked+.side-menu {
+    /*css selector*/
+    transform: translateX(0);
+
+}
+
+#side-menu-switch:checked+.side-menu label .fas {
+    /*change cursor direction*/
+    transform: scaleX(-1);
+}
+
+.nav a {
+    display: block;
+    /*一個佔一排*/
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    position: relative
+}
+
+.nav li {
+    position: relative;
+}
+
+.nav li+li a::before {
+    content: '';
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    left: 10px;
+    right: 10px;
+    top: 0;
+    position: absolute;
+}
+
+.nav li:hover>a {
+    /*延伸子層*/
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav a .fas {
+    margin-right: -1.1em;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.nav li:hover .fas {
+    margin-right: 0em;
+    transform: scale(1);
+}
+
+.nav ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    background-color: rgb(77, 74, 74);
+    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    top: 6px;
+    z-index: 2;
+
+}
+
+.nav li:hover>ul {
+    display: block;
+}
+
+
+.img-member1
+{		
+    position: absolute;
+    top:600px;
+    left:1350px;	        
+}
+.text-member1
+{
+    position: absolute;
+    left: 900px;
+    top: 600px;
+    padding: 10px;
+    border: 5px dashed black;
+}
+
+.img-member2
+{
+    position: absolute;
+    left:40px;	
+}
+.text-member2
+ {       
+    position: absolute;
+    left: 250px;
+    padding: 10px; 
+    border: 5px dashed black;
+}
+.img-member3
+{			
+    position: absolute;
+    left:1350px;
+    top: 200px;
+}
+.text-member3
+{        
+ position: absolute;
+left: 900px;
+top: 200px;
+padding: 10px; 
+border: 5px dashed black;
+}
+.img-member4
+{			
+    position: absolute;
+    top:400px;
+    left:40px;
+}
+.text-member4
+{      
+position: absolute;
+left: 250px;
+top: 400px;
+padding: 10px; 
+border: 5px dashed black;
+}
+
+
+
+
+
+
+footer{
+    background-color: #9b7f75;
+    display: flex;
+  }
+
+
+  .containerfooter{
+    width: 100%;
+    height:180px;
+  }
+
+  .footertxt{
+    position: relative;
+    width: 30%;
+    height: 180px;
+    float: left;
+    left: 4%;
+
+
+    line-height:170px;
+    text-align: center;
+    font-size: 90px;
+    font-family:serif;
+    letter-spacing: 25px;
+    color: rgb(231, 232, 233);
+    text-shadow: rgb(59, 60, 61)  0.1em 0.1em 0.1em;
+  }
+  
+  .containerfooterforindex{
+    width: 100%;
+    height:180px;
+  }
+
+  .footertxtforindex{
+    position: relative;
+    width: 35%;
+    height: 180px;
+    float: left;
+    left: 1%;
