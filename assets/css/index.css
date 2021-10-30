@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  background-color: rgb(255, 249, 213);
+}
+
+/*section {
+  margin: 0 0 0 20px;
+}*/
+
+
+.studiumbox{
+  zoom: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.studiumbox:after {
+  content: "";
+  display: table;
+  line-height: 0;
+  clear: both;
+}
+
+/*體育室組*/
+.studium {
+  margin: auto;
+  width: 600px;
+  text-align: left;
+  display: inline-block;
+}
+
+.studium p {
+  font-size: 30px;
+}
+
+.studium img{
+  width: 600px;
+  height: 450px;
+}
+
+.studiumbuttons {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 0 0;
+}
+
+.studium input{
+  width: 150px;
+  background-color: lightblue;
+  border-radius: 3px;
+  border-color: lightskyblue;
+  padding: 10px;
+}
+
+/*體育室組*/
+
+/*最新消息*/
+.news {
+  margin: auto;
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 5px;
+  width: 600px;
+  height: 500px;
+}
+
+.news p {
+  position: relative;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.news li a{
+  margin-right: 10px;
+  position: relative;
+  color: inherit;
+  font-size: 20px;
+}
+
+.newsmore {
+  float: right;
+  padding-right: 10px;
+  font-size: 20px;
+}
+/*最新消息*/
+
+/*快速連結*/
+.box2{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.wrap{
+  width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.item{
+  width: 300px;
+  margin: 40px;
+  text-align: center;
+  background-color: #EBEBEB ;
+  transform: translateY(0px);
+  transition: .5s;
+  border-radius: 20px;
+}
+.item img{
+  width: 300px;
+  height: 330px;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+.item h2{
+  border-bottom: 1px solid rgb(143, 143, 143);
+  margin-bottom: .3em;
+  padding-bottom: 15px;
+  letter-spacing: 5px;
+}
+.item p{
+  padding-top: 8px;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+.item .txt{
+  padding: 20px;
+  position: relative;;
+}
+
+.item .txt:before{                       /*繪製三角形效果*/
+  content: ''; 
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 0;
+  border-top: 50px solid transparent;
+  border-left: 150px solid #EBEBEB;
+  border-right: 150px solid #EBEBEB;
+  transform: translateY(-100%);
+}
+.item:hover{                             /*動畫*/
+  transform: translateY(-30px);
+}
+.item:hover .txt:before{
+  border-left: 150px solid #7a8495;
+  border-right: 150px solid #7a8495;
+}
+.item:hover .txt{
+  background-color: #7a8495;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.item:hover h2{
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.item:hover p{
+  color: #fff;
+}
+/*快速連結*/

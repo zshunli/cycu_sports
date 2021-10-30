@@ -4,65 +4,88 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>體育館</title>
-	<link rel="stylesheet"type="text/css" href="CSS/stadium.css">
+	<link rel="stylesheet"type="text/css" href="assets/css/stadium.css">
 	<script>
+	
 		function get_num(num){
-			document.getElementById('img').src="PHOTO/"+num+".jpg";
+			document.getElementById('img').src="assets/images"+num+".jpg";
+		
+	}
+		function toggle_visibility(id) 
+	{
+    	var e = document.getElementById('1F');
+    	if (e.style.display == 'block' || e.style.display=='')
+    	{
+        	e.style.display = 'none';
+    	}
+    	else 
+    	{
+        	e.style.display = 'block';
+    	}
+	}
+		function toggle_visibility_2(id) 
+	{
+    	var a = document.getElementById('2F');
+    	if (a.style.display == 'block' || a.style.display=='')
+    	{
+        	a.style.display = 'none';
+    	}
+    	else 
+    	{
+        	a.style.display = 'block';
+    	}
+	}
+		function toggle_visibility_3(id) 
+	{
+    	var b = document.getElementById('-1F');
+    	if (b.style.display == 'block' || b.style.display=='')
+    	{
+        	b.style.display = 'none';
+    	}
+    	else 
+    	{
+        	b.style.display = 'block';
+    	}
 	}
 
-        var cnt=0;
-        function change(){
-            cnt++;
-            var one = window.document.getElementById("1f");
-            var sec = document.getElementById("2f");
-            var thr = document.getElementById("3f");
-            if(cnt%3){
-                spanObj.innerHTML = "韻律教室";
-                act.style.display = "none";
 
-            }else{
-                spanObj.innerHTML = "good";
-            }
-            
-       }
 	</script>
-	
-
 </head>
 <body>
 	<div>
-		<img src="PHOTO/2.jpg" width="1400" height="800" />
+		<img src="assets/images/2.jpg" width="1400" height="800" />
 	</div>	
 		<div class="text1"><p>本館主球場40M×60M，可容納三座藍球場，正式比賽時則改為一座球場及800人之觀眾席。另副球場一座，以排球及非正式之網球練習為主；並設有視聽教室、韻律室、體操室、柔道室、桌球及重量訓練室，體運組辦公室100坪及浴廁、更衣等服務空間。主入口藉挑空之門廳與二樓及地下室連貫成一視覺穿透之整體。主館主入口側將量體較小之運動設施，以鋸齒狀連附於主館旁，除順應地界外，並可減低主館量體龐大而造成之壓迫感。屋頂採45°斜面採光高窗。主球場及副球場皆為大跨距鋼架構造。全館除體育組辦公室含空調設施外，皆採用自然或機械通風，並儘量採自然光線，以節省能源。地下室桌球、活動及浴廁、更衣空間，亦由採光天井或地下中庭，增加其使用品質。體育館地上兩層地下一層，總樓地板面積7,450平方公尺，總工程造價91,500,000元，於1989年10月竣工。</p></div>
 	
 	<div class="one">
-		<img id="img" class="plain" src="PHOTO/1.jpg" >
-			
+		<img id="img" class="plain" src="assets/images/1.jpg" >
+			<div id="1F" class="text2">
+				<p >綜合球場</p>
+				<p >桌球室</p>
+			</div>
 	</div>
 
 	<div class="two"> 
 		
-		
+		<div id="2F" class="text2">
+			<p>韻律教室</p>
+		</div>
 	</div>
 	<div class="three">
 		
-		
+		<div id="-1F" class="text2">
+			<p>健身房</p>
+			
+		</div>
 	</div>
 
-	<input type="button" class="btn" value="2F" onclick="get_num('2');change()" /><br><br>
-	<input type="button" class="btn" value="1F" onclick="get_num('1');change()" /><br><br>
-	<input type="button" class="btn" value="B1" onclick="get_num('-1');change()" />
 	
-	 <div>
-        <span id="1f">綜合球場<br>桌球室<br></span>
-        <span id="2f">韻律教室<br></span>
-        <span id="-1f">健身房</span>
-    </div>
-    
 
+	<input type="button" class="btn" value="2F" onclick="get_num('2');toggle_visibility_2('2F')" /><br><br>
+	<input type="button" class="btn" value="1F" onclick="get_num('1');toggle_visibility('1F')" /><br><br>
+	<input type="button" class="btn" value="B1" onclick="get_num('-1');toggle_visibility_3('-1F')" />
 	
-	
-	
+
 
 </body>
 </html>

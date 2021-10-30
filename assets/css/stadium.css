@@ -40,12 +40,9 @@
 		
 		
 	}
-	div.text1{
-		
-		
-	}
+	
 	div.text2{
-
+		display: block;
 		position: relative;
 		left: 1000px;
 		top: -300px;
