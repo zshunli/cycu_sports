@@ -1,13 +1,12 @@
 	div.text{
 		font-family: Comic Sans MS;
 		font-size: 30px;
-		position: relative;
-		top: ;
+		
 	}
 	div.one{
-    	float: left;
-    	width:400px;
-    	height:200px;
+    	position: absolute;
+    	left: 50px;
+    	top: 1250px;
     	font-size: 30px;
 		font-family: 微軟正黑體, Comic Sans MS;
 		
@@ -18,40 +17,57 @@
 	
 	
 	div.two{
+		float: left;
 		
-    	width:400px;
-    	height:200px;
 		font-size: 30px;
 		font-family: 微軟正黑體, Comic Sans MS;
-		display:none;
-		z-index: 1;
+		
+		
 	
 		
 		
 	}
 	div.three{
-		
-    	width:400px;
-    	height:200px;
+		float: left;
+    	
 		font-size: 30px;
 		font-family: 微軟正黑體, Comic Sans MS;
-		display:none;
-		z-index: 2;
+		
+		
 		
 		
 	}
 	
-	div.text2{
-		display: block;
+	div.text1{
+		
 		position: relative;
 		left: 1000px;
 		top: -300px;
 		
 	}
-	
+	div.text2{
+		display: none;
+		position: absolute;
+		left: 1050px;
+		top: 1300px;
+		
+		
+	}
+	a:hover{
+		
+		color: #fc3a63; 
+
+		position: relative; 
+
+		top: 1px;
+
+		left: 1px;
+
+
+	}
 	img.plain{
-		width: 600px;
-		height: 350px;
+		width: 800px;
+		height: 500px;
 
 	}
 
@@ -60,10 +76,66 @@
 		background-color: none;
 		font-family: Comic Sans MS;
 		font-size: 30px;
-		position: relative;
-		left: 350px;
-		top: 50px;
+		position: absolute;
+		left: 900px;
+		top: 1400px;
 		border:5px #9999FF dashed;
-
+		cursor: pointer;
 	}
+	input.btn2{
+		background-color: none;
+		font-family: Comic Sans MS;
+		font-size: 30px;
+		position: absolute;
+		left: 900px;
+		top: 1500px;
+		border:5px #9999FF dashed;
+		cursor: pointer;
+	}
+	input.btn3{
+		background-color: none;
+		font-family: Comic Sans MS;
+		font-size: 30px;
+		position: absolute;
+		left: 900px;
+		top: 1600px;
+		border:5px #9999FF dashed;
+		cursor: pointer;
+	}
+
+
+	.footer{
+		width: 95%;
+		height: 100px;
+		background-color:#ADD8E6;
+		text-align: center;
+		color: #fff;
+		padding: 33px;
+		font-family: sans-serif;
+		z-index: 1000;
+		position: absolute;
+		top:250%;
+	}
+	
+	.footer h1{
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	.footer p{
+		font-size: 12px;
+	}
+	.icon{   
+		position: absolute;
+		left: 85%;
+		top: 255%;
+		z-index: 2000;
+	  }
+	.icon a:link{
+		text-decoration: none;
+		color:white;
+	}
+	.icon a:visited{
+		color: white;
+	}
+
 	

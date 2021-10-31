@@ -5,87 +5,142 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>體育館</title>
 	<link rel="stylesheet"type="text/css" href="assets/css/stadium.css">
-	<script>
+	<link rel="stylesheet"type="text/css" href="assets/css/from.css">
+	<script type="text/javascript">
 	
 		function get_num(num){
-			document.getElementById('img').src="assets/images"+num+".jpg";
+			document.getElementById('img').src="assets/images/"+num+".jpg";
 		
 	}
 		function toggle_visibility(id) 
 	{
-    	var e = document.getElementById('1F');
-    	if (e.style.display == 'block' || e.style.display=='')
-    	{
-        	e.style.display = 'none';
-    	}
-    	else 
-    	{
-        	e.style.display = 'block';
-    	}
+    	
+    	var ids = ["2F", "1F", "-1F"];
+                for(var i = 0; i < ids.length; i++) {
+                    if(ids[i] != id)
+                        document.getElementById(ids[i]).style.display = "none";
+                }
+                document.getElementById(id).style.display = "block";
 	}
-		function toggle_visibility_2(id) 
-	{
-    	var a = document.getElementById('2F');
-    	if (a.style.display == 'block' || a.style.display=='')
-    	{
-        	a.style.display = 'none';
-    	}
-    	else 
-    	{
-        	a.style.display = 'block';
-    	}
-	}
-		function toggle_visibility_3(id) 
-	{
-    	var b = document.getElementById('-1F');
-    	if (b.style.display == 'block' || b.style.display=='')
-    	{
-        	b.style.display = 'none';
-    	}
-    	else 
-    	{
-        	b.style.display = 'block';
-    	}
-	}
+	
 
 
 	</script>
 </head>
 <body>
+	 <!--側邊攔-->
+    <header>
+    <input type="checkbox" name="/" id="side-menu-switch">
+    <div class="side-menu">
+        <ul class="nav">
+            <nav>
+                <li>
+                    <a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
+                    <ul>
+                        <li>
+                            <a href="#">體育館</a>
+                            <ul>
+                                <li>
+                                    <a href="#">校隊</a>
+                                </li>
+                                <li>
+                                    <a href="#">系隊</a>
+                                </li>
+                                <li>
+                                    <a href="#">公共開放時間</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">游泳池</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas"></i>&emsp;&emsp;體育室</a>
+                    <ul>
+                        <li>
+                            <a href="#">人員介紹</a>
+                        </li>
+                        <li>
+                            <a href="#">沿革發展</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                    <ul>
+                        <li>
+                            <a href="#">表單</a>
+                        </li>
+
+                    </ul>
+                </li>
+            </nav>
+
+            <label for="side-menu-switch">
+                <i class="fas fa-caret-right"></i>
+            </label>
+        </ul>
+    </div>
+    </header>
+
+    <!--表單-->
 	<div>
 		<img src="assets/images/2.jpg" width="1400" height="800" />
 	</div>	
-		<div class="text1"><p>本館主球場40M×60M，可容納三座藍球場，正式比賽時則改為一座球場及800人之觀眾席。另副球場一座，以排球及非正式之網球練習為主；並設有視聽教室、韻律室、體操室、柔道室、桌球及重量訓練室，體運組辦公室100坪及浴廁、更衣等服務空間。主入口藉挑空之門廳與二樓及地下室連貫成一視覺穿透之整體。主館主入口側將量體較小之運動設施，以鋸齒狀連附於主館旁，除順應地界外，並可減低主館量體龐大而造成之壓迫感。屋頂採45°斜面採光高窗。主球場及副球場皆為大跨距鋼架構造。全館除體育組辦公室含空調設施外，皆採用自然或機械通風，並儘量採自然光線，以節省能源。地下室桌球、活動及浴廁、更衣空間，亦由採光天井或地下中庭，增加其使用品質。體育館地上兩層地下一層，總樓地板面積7,450平方公尺，總工程造價91,500,000元，於1989年10月竣工。</p></div>
-	
-	<div class="one">
-		<img id="img" class="plain" src="assets/images/1.jpg" >
-			<div id="1F" class="text2">
-				<p >綜合球場</p>
-				<p >桌球室</p>
-			</div>
-	</div>
+		<div class="text"><p>本館主球場40M×60M，可容納三座藍球場，正式比賽時則改為一座球場及800人之觀眾席。另副球場一座，以排球及非正式之網球練習為主；並設有視聽教室、韻律室、體操室、柔道室、桌球及重量訓練室，體運組辦公室100坪及浴廁、更衣等服務空間。主入口藉挑空之門廳與二樓及地下室連貫成一視覺穿透之整體。主館主入口側將量體較小之運動設施，以鋸齒狀連附於主館旁，除順應地界外，並可減低主館量體龐大而造成之壓迫感。屋頂採45°斜面採光高窗。主球場及副球場皆為大跨距鋼架構造。全館除體育組辦公室含空調設施外，皆採用自然或機械通風，並儘量採自然光線，以節省能源。地下室桌球、活動及浴廁、更衣空間，亦由採光天井或地下中庭，增加其使用品質。體育館地上兩層地下一層，總樓地板面積7,450平方公尺，總工程造價91,500,000元，於1989年10月竣工。</p></div>
 
 	<div class="two"> 
 		
 		<div id="2F" class="text2">
-			<p>韻律教室</p>
+			<a href="dance.html"><p>韻律教室</p></a>
 		</div>
 	</div>
+
+	<div class="one">
+		<img id="img" class="plain" src="assets/images/1.jpg" >
+			<div id="1F" class="text1">
+				<a href="ball.html"><p >綜合球場</p></a>
+				<a href="table.html"><p >桌球室</p></a>
+			</div>
+	</div>
+
+	
 	<div class="three">
 		
 		<div id="-1F" class="text2">
-			<p>健身房</p>
+			<a href="gym.html"><p>健身房</p></a>
 			
 		</div>
 	</div>
 
 	
 
-	<input type="button" class="btn" value="2F" onclick="get_num('2');toggle_visibility_2('2F')" /><br><br>
-	<input type="button" class="btn" value="1F" onclick="get_num('1');toggle_visibility('1F')" /><br><br>
-	<input type="button" class="btn" value="B1" onclick="get_num('-1');toggle_visibility_3('-1F')" />
+	<input type="button" class="btn" value="2F" onclick="get_num('2');toggle_visibility('2F')" /><br><br>
+	<input type="button" class="btn2" value="1F" onclick="get_num('1');toggle_visibility('1F')" /><br><br>
+	<input type="button" class="btn3" value="B1" onclick="get_num('-1');toggle_visibility('-1F')" />
 	
 
+    <footer>
+        <div class="footer">
+            <h1>Chung Yuan Christian University</h1>
+            <p>Copyright © 2021 CYIM <br>
+                32023 桃園市中壢區中北路200號 <br>
+                Tel：+886-3-265-9999 , +886-3-456-317</p>
+        </div>
+        <div class="icon">
+             <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
+             <br>
+             <br>
+             <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+           </div>
+    </footer>
 
 </body>
 </html>
