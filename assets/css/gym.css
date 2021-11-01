@@ -1,0 +1,132 @@
+.first{
+    
+  float: left;
+    height: 500px;
+    width: 500px;
+    padding: 45px;
+}
+
+.second{
+    height: 500px;
+    width: 500px;
+    float:right;
+    padding: 45px;
+    margin: 60px;
+}
+
+
+
+
+
+.color-lump{
+    height: 70px;
+    width: 100%;
+    padding: 20px;
+    background-color: lightblue;
+    
+}
+
+
+
+
+
+.t{
+    height: 2px;
+    text-decoration: underline;
+    font-size: 30px;
+    padding: 45px;
+    
+  
+}
+p{
+    letter-spacing: 5px;
+}
+
+.pp{
+    letter-spacing: 5px;
+   margin-left: 30px;
+    
+
+   
+   
+}
+img{
+    width: 200px;
+    height: 150px;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+img.two{
+    width: 200px;
+    height: 150px;
+    float: left;
+    position: relative;
+    top: -200px;
+    left: 150px;
+    z-index: 1;
+}
+.hb{
+    
+text-align: center;
+}
+
+
+.button{
+  width:350px;
+  height: 250px;
+  text-align: center;
+  color:#fff;
+  font-size:40px;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  background-color: lightslategray;
+  z-index: -1;
+}
+.button:hover .hover{
+  display:block;
+
+
+}
+.hover{
+  display:none;
+  background-color:#ffb2b2;
+  
+
+}
+.button2{
+  width:300px;
+  height: 250px;
+  text-align: center;
+  color:#fff;
+  font-size:40px;
+  z-index: 2;
+  position: relative;
+  top: -100px;
+  left: 200px;
+}
+.button2:hover .hover2{
+  display:block;
+  
+
+}
+.hover2{
+  display:none;
+  /*background-color:#ffb2b2;*/
+  color: black;
+}
+
+footer{
+  position: relative;
+  margin-bottom: 0;
+}
+.icon{
+  position: relative;
+  padding-top: 50px;
+}
+
+    
+

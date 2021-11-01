@@ -118,26 +118,36 @@
     /*側邊攔*/
 
     /*版權列*/
-.footer{
-    height: 100px;
-    background-color: rgb( 198, 230, 255);
-    text-align: center;
-    color: rgb(0, 0, 0);
-    padding: 33px;
-    font-family: sans-serif;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  .footer img{
-    width: 135px;
-    height: 135px;
+    .footer{
+      width: 95%;
+      height: 100px;
+      background-color:#ADD8E6;
+      text-align: center;
+      color: #fff;
+      padding: 33px;
+      font-family: sans-serif;
+      z-index: 4;
+      position: absolute;
+      top:100%;
   }
   
   .footer h1{
-    font-size: 18px;
-    margin-bottom: 10px;
+      font-size: 18px;
+      margin-bottom: 10px;
   }
   .footer p{
-    font-size: 12px;
+      font-size: 12px;
   }
+  .icon{   
+      position: absolute;
+      left: 85%;
+      top: 105%;
+      z-index: 10;
+    }
+  .icon a:link{
+      text-decoration: none;
+      color:white;
+  }
+  .icon a:visited{
+      color: white;
+    }

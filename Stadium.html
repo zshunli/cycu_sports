@@ -5,92 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>體育館</title>
 	<link rel="stylesheet"type="text/css" href="assets/css/stadium.css">
-	<link rel="stylesheet"type="text/css" href="assets/css/from.css">
-	<script type="text/javascript">
-	
-		function get_num(num){
-			document.getElementById('img').src="assets/images/"+num+".jpg";
-		
-	}
-		function toggle_visibility(id) 
-	{
-    	
-    	var ids = ["2F", "1F", "-1F"];
-                for(var i = 0; i < ids.length; i++) {
-                    if(ids[i] != id)
-                        document.getElementById(ids[i]).style.display = "none";
-                }
-                document.getElementById(id).style.display = "block";
-	}
-	
 
-
-	</script>
 </head>
 <body>
-	 <!--側邊攔-->
+    <!--側邊攔-->
     <header>
-    <input type="checkbox" name="/" id="side-menu-switch">
-    <div class="side-menu">
-        <ul class="nav">
-            <nav>
-                <li>
-                    <a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
-                    <ul>
-                        <li>
-                            <a href="#">體育館</a>
-                            <ul>
-                                <li>
-                                    <a href="#">校隊</a>
-                                </li>
-                                <li>
-                                    <a href="#">系隊</a>
-                                </li>
-                                <li>
-                                    <a href="#">公共開放時間</a>
-                                </li>
-                            </ul>
-                        </li>
+        <input type="checkbox" name="/" id="side-menu-switch">
+        <div class="side-menu">
+            <ul class="nav">
+                <nav>
+                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a>
+                    <li><a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
+                        <ul>
+                            <li><a href="Stadium.html">體育館</a>
+                                <ul>
+                                    <li><a href="ball.html">綜合球場</a></li>
+                                    <li><a href="table.html">桌球室</a></li>
+                                    <li><a href="dance.html">韻律教室</a></li>
+                                    <li><a href="gym.html">健身房</a></li>
+                                </ul>
+                            </li>
 
-                        <li>
-                            <a href="#">游泳池</a>
+                            <li><a href="newswim.html">游泳池</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gym.html"><i class="fas"></i>&emsp;&emsp;體育室</a>
+                        <ul>
+                            <li><a href="#">人員介紹</a></li>
+                            <li><a href="history.html">沿革發展</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="everyone.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
+                        <ul><li><a href="introduce.html">介紹影片</a></li></ul></li>
+                    <li><a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                    </li>
+                </nav>
 
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas"></i>&emsp;&emsp;體育室</a>
-                    <ul>
-                        <li>
-                            <a href="#">人員介紹</a>
-                        </li>
-                        <li>
-                            <a href="#">沿革發展</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
-                    <ul>
-                        <li>
-                            <a href="#">表單</a>
-                        </li>
-
-                    </ul>
-                </li>
-            </nav>
-
-            <label for="side-menu-switch">
-                <i class="fas fa-caret-right"></i>
-            </label>
-        </ul>
-    </div>
+                <label for="side-menu-switch">
+                    <i class="fas fa-caret-right"></i>
+                </label>
+            </ul>
+        </div>
     </header>
 
-    <!--表單-->
+    <!--樓層-->
+    <div class="box">
+        <div>
 	<div>
 		<img src="assets/images/2.jpg" width="1400" height="800" />
 	</div>	
@@ -110,7 +70,7 @@
 				<a href="table.html"><p >桌球室</p></a>
 			</div>
 	</div>
-
+</div>
 	
 	<div class="three">
 		
@@ -119,13 +79,14 @@
 			
 		</div>
 	</div>
-
+<script src="assets/js/animation.js"></script>
 	
-
+<div class="btnbox">
 	<input type="button" class="btn" value="2F" onclick="get_num('2');toggle_visibility('2F')" /><br><br>
 	<input type="button" class="btn2" value="1F" onclick="get_num('1');toggle_visibility('1F')" /><br><br>
 	<input type="button" class="btn3" value="B1" onclick="get_num('-1');toggle_visibility('-1F')" />
-	
+	</div>
+</div>
 
     <footer>
         <div class="footer">

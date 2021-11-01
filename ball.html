@@ -1,100 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>綜合球場</title>
-	<style>
-	@import url("assets/css/ball.css");
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>綜合球場</title>
+    <style>
+        @import url("assets/css/ball.css");
+    </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
+
 <body>
+    <!--側邊攔-->
+    <header>
+        <input type="checkbox" name="/" id="side-menu-switch">
+        <div class="side-menu">
+            <ul class="nav">
+                <nav>
+                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a>
+                    <li><a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
+                        <ul>
+                            <li><a href="Stadium.html">體育館</a>
+                                <ul>
+                                    <li><a href="ball.html">綜合球場</a></li>
+                                    <li><a href="table.html">桌球室</a></li>
+                                    <li><a href="dance.html">韻律教室</a></li>
+                                    <li><a href="gym.html">健身房</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="newswim.html">游泳池</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gym.html"><i class="fas"></i>&emsp;&emsp;體育室</a>
+                        <ul>
+                            <li><a href="#">人員介紹</a></li>
+                            <li><a href="history.html">沿革發展</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="everyone.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
+                        <ul><li><a href="introduce.html">介紹影片</a></li></ul></li>                    
+                    <li><a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                    </li>
+                </nav>
+
+                <label for="side-menu-switch">
+                    <i class="fas fa-caret-right"></i>
+                </label>
+            </ul>
+        </div>
+    </header>
+
     <h1 class="ground">綜合球場</h1>
     <div class="pandw">
-	<img src="assets/img/ball1.JPG" class="ball" width="600px" height="400px" 
-            onmouseover="this.src='assets/img/ball2.JPG'"
-            onmouseout="this.src='assets/img/ball1.JPG'">
+        <img src="assets/images/ball1.JPG" class="ball" width="600px" height="400px"
+            onmouseover="this.src='assets/images/ball2.JPG'" onmouseout="this.src='assets/images/ball1.JPG'">
     </div>
 
     <p class="word">結合羽球、排球及籃球的主要球場，大小為40Mx60M，為3座籃球場的大小。</p>
     <p class="opentime">
         <span class="open">開放時間：</span><br>
-        <img src="assets/img/open.jpg" class="opentimepc" width="600px" height="370px" >      
+        <img src="assets/images/open.jpg" class="opentimepc" width="600px" height="370px">
     </p>
-	
-        <header>
-            <input type="checkbox" name="/" id="side-menu-switch">
-            <div class="side-menu">
-                <ul class="nav">
-                    <nav>
-                        <li>
-                            <a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
-                            <ul>
-                                <li>
-                                    <a href="#">體育館</a>
-                                    <ul>
-                                        <li>
-                                            <a href="#">校隊</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">系隊</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">公共開放時間</a>
-                                        </li>
-                                    </ul>
-                                </li>
-        
-                                <li>
-                                    <a href="#">游泳池</a>
-        
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas"></i>&emsp;&emsp;體育室</a>
-                            <ul>
-                                <li>
-                                    <a href="#">人員介紹</a>
-                                </li>
-                                <li>
-                                    <a href="#">沿革發展</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
-                            <ul>
-                                <li>
-                                    <a href="#">表單</a>
-                                </li>
-        
-                            </ul>
-                        </li>
-                    </nav>
-        
-                    <label for="side-menu-switch">
-                        <i class="fas fa-caret-right"></i>
-                    </label>
-                </ul>
-            </div>
-            </header>
-            <footer>
-                <div class="footer">
-                    <h1 >Chung Yuan Christian University</h1>
-                    <p>Copyright © 2021 CYIM <br>
-                        32023 桃園市中壢區中北路200號 <br>
-                        Tel：+886-3-265-9999 , +886-3-456-317</p>
-                </div>
-                <div class="icon">
-                     <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
-                     <br>
-                     <br>
-                     <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
-                   </div>
-            </footer>
+
+    <footer>
+        <div class="footer">
+            <h1>Chung Yuan Christian University</h1>
+            <p>Copyright © 2021 CYIM <br>
+                32023 桃園市中壢區中北路200號 <br>
+                Tel：+886-3-265-9999 , +886-3-456-317</p>
+        </div>
+        <div class="icon">
+            <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
+            <br>
+            <br>
+            <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+        </div>
+    </footer>
 </body>
+
 </html>

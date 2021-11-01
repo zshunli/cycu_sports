@@ -1,105 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>介紹影片</title>
     <style>
-    @import url("assets/css/introduce.css");
+        @import url("assets/css/introduce.css");
     </style>
+    <link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
+
 <body>
-    <!--照片+影片-->
-    <div class="footer">
-    <a href="everyone.html">
-    <img src="assets/img/pic.JPG" class="us" width="400px" height="350px" 
-            onmouseover="this.src='assets/img/pic2.JPG'"
-            onmouseout="this.src='assets/img/pic.JPG'">
-    </a>
-    </div>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/zcGUpk9liu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
-     <!--照片+影片-->
-     <!--側邊攔-->
-     <header>
+    <!--側邊攔-->
+    <header>
         <input type="checkbox" name="/" id="side-menu-switch">
         <div class="side-menu">
-    
-    
             <ul class="nav">
                 <nav>
-                    <li>
-                        <a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
+                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a>
+                    <li><a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
                         <ul>
-                            <li>
-                                <a href="#">體育館</a>
+                            <li><a href="Stadium.html">體育館</a>
                                 <ul>
-                                    <li>
-                                        <a href="#">校隊</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">系隊</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">公共開放時間</a>
-                                    </li>
+                                    <li><a href="ball.html">綜合球場</a></li>
+                                    <li><a href="table.html">桌球室</a></li>
+                                    <li><a href="dance.html">韻律教室</a></li>
+                                    <li><a href="gym.html">健身房</a></li>
                                 </ul>
                             </li>
-    
-                            <li>
-                                <a href="#">游泳池</a>
-    
-                            </li>
+
+                            <li><a href="newswim.html">游泳池</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#"><i class="fas"></i>&emsp;&emsp;體育室</a>
+                    <li><a href="gym.html"><i class="fas"></i>&emsp;&emsp;體育室</a>
                         <ul>
-                            <li>
-                                <a href="#">人員介紹</a>
-                            </li>
-                            <li>
-                                <a href="#">沿革發展</a>
-                            </li>
+                            <li><a href="#">人員介紹</a></li>
+                            <li><a href="history.html">沿革發展</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="introduce.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
-                    </li>
-                    <li>
-                        <a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
-                        <ul>
-                            <li>
-                                <a href="from.html">表單</a>
-                            </li>
-    
-                        </ul>
+                    <li><a href="everyone.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
+                        <ul><li><a href="introduce.html">介紹影片</a></li></ul></li>
+                    <li><a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
                     </li>
                 </nav>
-    
+
                 <label for="side-menu-switch">
                     <i class="fas fa-caret-right"></i>
                 </label>
             </ul>
         </div>
-        </header>
-        <!--側邊攔-->
-        
-        
-        <footer>
-            <div class="footer">
-                <h1>Chung Yuan Christian University</h1>
-                <p>Copyright © 2021 CYIM <br>
-                    32023 桃園市中壢區中北路200號 <br>
-                    Tel：+886-3-265-9999 , +886-3-456-317</p>
-            </div>
-            <div class="icon">
-                 <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
-                 <br>
-                 <br>
-                 <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
-               </div>
-        </footer>
+    </header>
+    <!--照片+影片-->
+    <section>
+        <div class="us">
+        <a href="everyone.html">
+            <img src="assets/images/pic.JPG"
+                onmouseover="this.src='assets/images/pic2.JPG'" onmouseout="this.src='assets/images/pic.JPG'">
+        </a>
+    </div>
+    <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zcGUpk9liu4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+    </iframe>
+    </div>
+    </section>
+    <!--照片+影片-->
+    
+    <footer>
+        <div class="footer">
+            <h1>Chung Yuan Christian University</h1>
+            <p>Copyright © 2021 CYIM <br>
+                32023 桃園市中壢區中北路200號 <br>
+                Tel：+886-3-265-9999 , +886-3-456-317</p>
+        </div>
+        <div class="icon">
+            <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
+            <br>
+            <br>
+            <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+        </div>
+    </footer>
 </body>
+
 </html>
