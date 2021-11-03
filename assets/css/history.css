@@ -1,133 +1,129 @@
-.history{
-    columns:2 ;
-    column-rule: solid 5px #4682B4;
-    margin:100px 250px 100px 250px;
+.title {
+  text-align: center;
+  border: 5px#4682B4 solid;
+  margin: 60px 450px 60px 450px;
 }
-.title{
-    text-align: center;
-    border: 5px#4682B4 solid ;
-    margin:  60px 450px 60px 450px;
 
+.title h1{
+  font-size: 40px;
 }
-.title3{
-    -webkit-column-break-before: always;
-    padding: 30px;
-    font-family: 新細明體;
-    font-size: 30px;
-    color: #4682B4;
-    --x-offset: -0.0625em;
-  --y-offset: 0.0625em;
-  --stroke: 0.025em;
-  --background-color: white;
-  --stroke-color: lightblue;
-  
-  text-shadow: 
-    
-    var(--x-offset)
-    var(--y-offset)
-    0px
-    var(--background-color), 
-    
-    calc( var(--x-offset) - var(--stroke) )
-    calc( var(--y-offset) + var(--stroke) )
-    0px
-    var(--stroke-color);
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    margin: 0 150px;
 }
-.teacher1{
-    padding: 6px 0 6px 0;
-    background-color:#4682B4;
-    background-size: auto ; 
-    margin: 30px;
-    font-size: 18px;
-    color: white;  
-    text-align: center;
+
+.history{
+  flex: 24;
 }
-.title2{
-    text-align: right;
-    padding: 30px;
-    font-family: 新細明體;
-    font-size: 30px;
-    color:#4682B4;
-    font-weight:10px;
-  
+
+/*文字動畫*/
+.title1 {
+  text-align: center;
+  font-size: 40px;
+  color: #696969;
+}
+
+.title1 span {
+  display: inline-block;
+  animation: move 4.5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.title1 span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.title1 span:nth-child(3) {
+  animation-delay: 1s;
+}
+.title1 span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.title1 span:nth-child(5) {
+  animation-delay: 2s;
+}
+.title1 span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.title1 span:nth-child(7) {
+  animation-delay: 3s;
+}
+.title1 span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.title1 span:nth-child(9) {
+  animation-delay: 4s;
+}
+/*文字動畫*/
+
+.title2 {
+  text-align: right;
+  padding: 30px;
+  font-family: 新細明體;
+  font-size: 30px;
+  color: #4682B4;
+  font-weight: 10px;
   --x-offset: -0.0625em;
   --y-offset: 0.0625em;
   --stroke: 0.025em;
   --background-color: white;
   --stroke-color: lightblue;
-  
-  text-shadow: 
-    
-    var(--x-offset)
-    var(--y-offset)
-    0px
-    var(--background-color), 
-    
-    calc( var(--x-offset) - var(--stroke) )
-    calc( var(--y-offset) + var(--stroke) )
-    0px
-    var(--stroke-color);
+  text-shadow:
+    var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
 }
-.word{
-    /*float: right;*/
-    text-align: right;
-    padding:0 30px 0 0;
+
+.word {
+  text-align: right;
+  padding: 0 30px 0 0;
+  clear: right;
 }
-.title1{
-    text-align: center;
-    font-size: 40px;
-    color:#696969;
+
+.divide{
+  text-align: center;
+  flex: 1;
 }
-.title1 span {
-    display: inline-block;
-    animation: move 4.5s ease-in-out infinite;
-  }
-  @keyframes move {
-    0% {
-      transform: translate(-30%, 0);
-    }
-    50% {
-      text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
-    }
-    100% {
-      transform: translate(30%, 0);
-    }
-  }
-  
-  .title1 span:nth-child(2) {
-    animation-delay: 0.5s;
-  }
-  
-  .title1 span:nth-child(3) {
-    animation-delay: 1s;
-  }
-  
-  .title1 span:nth-child(4) {
-    animation-delay: 1.5s;
-  }
-  
-  .title1 span:nth-child(5) {
-    animation-delay: 2s;
-  }
-  
-  .title1 span:nth-child(6) {
-    animation-delay: 2.5s;
-  }
-  
-  .title1 span:nth-child(7) {
-    animation-delay: 3s;
-  }
-  .title1 span:nth-child(8) {
-    animation-delay: 3.5s;
-  }
-  .title1 span:nth-child(9) {
-    animation-delay: 4s;
-  }
-footer{
-  position: relative;
-  margin-bottom: 0;
+
+.manager{
+  flex: 24;
 }
-.icon{
-  position: relative;
-  padding-top: 50px;
+
+.title3 {
+  -webkit-column-break-before: always;
+  padding: 30px;
+  font-family: 新細明體;
+  font-size: 30px;
+  color: #4682B4;
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+  text-shadow:
+    var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
+}
+
+.teacher1 {
+  padding: 6px 0 6px 0;
+  background-color: #4682B4;
+  background-size: auto;
+  margin: 30px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
 }

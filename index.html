@@ -11,13 +11,20 @@
 </head>
 
 <body>
-    <!--側邊攔-->
+    <!--標題-->
     <header>
+        <div class="tle">
+            中原大學體育館
+        </div>
+    </header>
+
+    <!--側邊欄-->
+    <aside>
         <input type="checkbox" name="/" id="side-menu-switch">
         <div class="side-menu">
             <ul class="nav">
-                <nav>
-                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a>
+                <div>
+                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a></li>
                     <li><a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
                         <ul>
                             <li><a href="Stadium.html">體育館</a>
@@ -29,7 +36,7 @@
                                 </ul>
                             </li>
 
-                            <li><a href="newswim.html">游泳池</a></li>
+                            <li><a href="swim.html">游泳池</a></li>
                         </ul>
                     </li>
                     <li><a href="gym.html"><i class="fas"></i>&emsp;&emsp;體育室</a>
@@ -39,17 +46,20 @@
                         </ul>
                     </li>
                     <li><a href="everyone.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
-                        <ul><li><a href="introduce.html">介紹影片</a></li></ul></li>
-                    <li><a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                        <ul>
+                            <li><a href="introduce.html">介紹影片</a></li>
+                        </ul>
                     </li>
-                </nav>
-
+                    <li><a href="form.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                    </li>
+                </div>
                 <label for="side-menu-switch">
                     <i class="fas fa-caret-right"></i>
                 </label>
             </ul>
         </div>
-    </header>
+    </aside>
+
     <!--輪播圖-->
     <section>
         <div class="banner_container">
@@ -70,10 +80,11 @@
                 <li data-index="4"></li>
             </ul>
             <div class="left_btn"><img src="assets/images/arrowleft.png"></div>
-            <div class="right_btn"><img src="assets/images/arrowright.png"></div>  
+            <div class="right_btn"><img src="assets/images/arrowright.png"></div>
         </div>
         <script src="assets/js/animation.js"></script>
     </section>
+
     <!--體育室和最新消息-->
     <section>
         <div class="studiumbox">
@@ -87,27 +98,34 @@
             </div>
             <div class="news">
                 <p>最新消息</p>
-                    <div>
-                        <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="300" scrolldelay="4"
-                        scrollamount="3">
-                            <ul>
-                                <li><a target="_block" href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=44575">【體育室教學組】誠徵長期工讀生</a>
-                                </li><br>
-                                <li><a target="_block" href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=34525">【體育室教學組】110-1「體育課程」線上選課說明</a>
-                                </li><br>
-                                <li><a target="_block" href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=45242">運動證申請系統</a></li><br>
-                                <li><a target="_block" href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42469">體育室重要通知：任何場館異動公告，請以本網址為主，敬請加入本場館臉書以利知道所有場館開放訊息唷。</a>
-                                </li><br>
-                                <li><a target="_block" href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42471">徵求"發現中原體育園區粉絲"，意者請洽體育室營運組。</a>
-                                </li><br>
-                            </ul>
-                        </marquee>
-                        <a target="_block" href="https://pe.cycu.edu.tw/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/" class="newsmore">
+                <div>
+                    <marquee onmouseover="this.stop()" onmouseout="this.start()" direction="up" height="300"
+                        scrolldelay="4" scrollamount="3">
+                        <ul>
+                            <li><a target="_block"
+                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=44575">【體育室教學組】誠徵長期工讀生</a>
+                            </li><br>
+                            <li><a target="_block"
+                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=34525">【體育室教學組】110-1「體育課程」線上選課說明</a>
+                            </li><br>
+                            <li><a target="_block"
+                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=45242">運動證申請系統</a></li><br>
+                            <li><a target="_block"
+                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42469">體育室重要通知：任何場館異動公告，請以本網址為主，敬請加入本場館臉書以利知道所有場館開放訊息唷。</a>
+                            </li><br>
+                            <li><a target="_block"
+                                    href="https://ann.cycu.edu.tw/aa/frontend/AnnItem.jsp?sn=42471">徵求"發現中原體育園區粉絲"，意者請洽體育室營運組。</a>
+                            </li><br>
+                        </ul>
+                    </marquee>
+                    <a target="_block" href="https://pe.cycu.edu.tw/%e6%9c%80%e6%96%b0%e6%b6%88%e6%81%af/"
+                        class="newsmore">
                         more</a><br>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!--空間介紹連結區塊-->
     <section>
         <div class="box2">
@@ -116,11 +134,11 @@
                     <a href="everyone.html"><img src="assets/images/color.jpg"></a>
                     <div class="txt">
                         <h2>網站人員介紹</h2>
-                        <p>-STAFFS  INTRODUCTION-</p>
+                        <p>-STAFFS INTRODUCTION-</p>
                     </div>
                 </div>
                 <div class="item">
-                    <a href="from.html"><img src="assets/images/color2.jpg"></a>
+                    <a href="form.html"><img src="assets/images/color2.jpg"></a>
                     <div class="txt">
                         <h2>聯絡我們</h2>
                         <p>-CONTACT US-</p>
@@ -129,19 +147,20 @@
             </div>
         </div>
     </section>
+
     <!--版權列-->
     <footer>
-        <div class="footer">
-            <h1>Chung Yuan Christian University</h1>
-            <p>Copyright © 2021 CYIM <br>
-                32023 桃園市中壢區中北路200號 <br>
-                Tel：+886-3-265-9999 , +886-3-456-317</p>
-        </div>
-        <div class="icon">
-            <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
-            <br>
-            <br>
-            <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+        <div class="footerbox">
+            <div class="footer">
+                <h1>Chung Yuan Christian University</h1>
+                <p>Copyright © 2021 CYIM <br>
+                    32023 桃園市中壢區中北路200號 <br>
+                    Tel：+886-3-265-9999 , +886-3-456-317</p>
+            </div>
+            <div class="icon">
+                <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
+                <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+            </div>
         </div>
     </footer>
 </body>

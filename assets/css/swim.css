@@ -1,0 +1,183 @@
+.part {
+  width: 100%;
+}
+
+/*輪播圖*/
+.banner_container {
+  position: relative;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 1200px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.img_box {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul.img_box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(-1200px);
+}
+
+.img_box li {
+  float: left;
+  list-style: none;
+}
+
+.img_box li img {
+  width: 1200px;
+}
+
+.sel_box {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sel_box li {
+  list-style: none;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: pink;
+  margin-right: 3px;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.left_btn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+
+.right_btn {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.sel_box .cur {
+  background-color: red !important;
+  transform: scale(1.3);
+}
+
+/*泳池介紹*/
+.borderstyle {
+  margin: 50px;
+  border-style: double;
+  border-radius: 400px;
+  border-width: 9px;
+}
+
+div.introduction {
+  margin-top: 25px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 5px;
+  position: relative;
+  font-family: 微軟正黑體, Comic Sans MS;
+}
+
+.introduction{
+  font-family: 標楷體, Comic Sans MS;
+}
+
+h3 {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 5px;
+  text-decoration-color: red;
+  font-family: 標楷體, Comic Sans MS;
+}
+
+.box {
+  zoom: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.box:after {
+  content: "";
+  display: table;
+  line-height: 0;
+
+}
+
+.inside {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.inside p{
+  font-size: 30px;
+  font-family: 標楷體, Comic Sans MS;
+}
+
+img.swimphoto {
+  width: 600px;
+  height: 375px;
+  padding: 50px;
+  transition: transform 1s ease;
+}
+
+.inside:hover .swimphoto,
+.inside:focus .swimphoto {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  text-align: justify;
+}
+
+.open{
+  text-align: center;
+}
+
+span {
+  font-size: 50px;
+  writing-mode: vertical-lr;
+  font-family: 標楷體, Comic Sans MS;
+}
+
+.open img {
+  width: 500px;
+  height: 500px;
+  box-shadow: 2000px;
+}
+
+.feebox{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fee {
+  margin: 50px;
+  border: dotted 5px burlywood;
+}
+
+.gym {
+  position: relative;
+  margin-top: 250px;
+  font-family: 標楷體, Comic Sans MS;
+}

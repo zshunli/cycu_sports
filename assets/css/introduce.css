@@ -1,16 +1,16 @@
-body{
-    background-image: url(../images/bg.jpg); 
-    background-size:1045px auto  ;
-   background-repeat: repeat-x;
+section {
+    min-height: calc(100% - 50px);
 }
-/*照片+影片*/ 
+/*照片+影片*/
+.photo{
+    text-align: center;
+}
+
 .us img{
-    position: absolute;
-    top: 100px;
-    left: 35%;
+    position: relative;
+    top: 40px;
     width: 400px;
     height: 350px;
-    z-index: -20;
 }
 img:hover{
     transform: scale(1.1);	
@@ -22,41 +22,6 @@ iframe{
     position: absolute;
     top:45%;
     left:30%;
-    z-index: 1000;
+    z-index: 2;
 }
 /*照片+影片*/
-
- /*版權列*/
- .footer{
-    width: 95%;
-    height: 100px;
-    background-color:#ADD8E6;
-    text-align: center;
-    color: #fff;
-    padding: 33px;
-    font-family: sans-serif;
-    z-index: 4;
-    position: absolute;
-    top:100%;
-}
-
-.footer h1{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.footer p{
-    font-size: 12px;
-}
-.icon{   
-    position: absolute;
-    left: 85%;
-    top: 105%;
-    z-index: 10;
-  }
-.icon a:link{
-    text-decoration: none;
-    color:white;
-}
-.icon a:visited{
-    color: white;
-  }

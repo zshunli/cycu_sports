@@ -1,63 +1,68 @@
-body{
-    background-image: url(../images/bg.jpg); 
-    background-size:1045px auto  ;
-   background-repeat: repeat-x;
+section {
+    min-height: calc(100% - 50px);
 }
-.ball{
-    position: absolute;
-    top:25%;
-    left:5%;
-   
-}
-.ball:hover{
-    transform: scale(1.1);	
-    }
-.ground{
-    position: absolute;
-    top:12%;
-    left: 5%;
-    background-color:#F4A460;
-    color: white;
-    border-radius: 1cm;
-    padding: 6px;
-    font-size:25px;
-    
-}
+
 @font-face {
     font-family: '清松手寫體2';
     src: url('../fonts/清松手寫體2.woff') format("woff"),
         url('../fonts/fu/清松手寫體2.ttf') format("truetype"),
         url('../fonts/清松手寫體2.eot') format("embedded-opentype");
-  }
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    top: 100px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ground{
+    background-color:#F4A460;
+    color: white;
+    border-radius: 1cm;
+    font-size:25px;
+    padding: 6px;
+    width: 100px;
+}
+
+.ball{
+   width: 650px;
+   margin: 20px;
+}
+.ball:hover{
+    transform: scale(1.2);	
+}
+
+.recount, .opentimepc{
+    width: 650px;
+}
+
 .word {
     font-family: '清松手寫體2', Times, serif;
     text-align: left;
-    font-size: 20px;
-    padding-left: 40px;
-    padding-top: 60px;
-    position: absolute;
-    right: 180px;
-    top: 8%;
-    width: 525px;
-    height: 350px;
+    font-size: 25px;
     color: rgb(65, 65, 65);
+    margin: 10px;
 }
+
 .open{
     font-family: '清松手寫體2', Times, serif;
-    text-align: left;
     font-size: 42px;
-    padding-left: 40px;
-    padding-top: 60px;
-    position: absolute;
-    right: 180px;
-    top: 20%;
-    width: 525px;
-    height: 350px;
     color: rgb(65, 65, 65);
 }
-.opentimepc{
-    position: absolute;
-    right: 110px;
-    top: 37%;
 
+.opentimepc:hover{
+    transform: scale(1.4);
+}
+
+.gohome{
+    height: 80px;
+    padding: 15px;
 }

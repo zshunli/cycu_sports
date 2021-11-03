@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>韻律教室</title>
-	<style>
-	@import url("assets/css/dance.css");
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韻律教室</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/dance.css">
     <link rel="stylesheet" type="text/css" href="assets/css/common.css">
 </head>
+
 <body>
-    <!--側邊攔-->
+    <!--標題-->
     <header>
+        <div class="tle">
+            中原大學體育館
+        </div>
+    </header>
+
+    <!--側邊攔-->
+    <aside>
         <input type="checkbox" name="/" id="side-menu-switch">
         <div class="side-menu">
             <ul class="nav">
-                <nav>
-                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a>
+                <div>
+                    <li><a href="index.html"><i class="fas"></i>&emsp;&emsp;首頁</a></li>
                     <li><a href="#"><i class="fas"></i>&emsp;&emsp;場所</a>
                         <ul>
                             <li><a href="Stadium.html">體育館</a>
@@ -27,8 +34,7 @@
                                     <li><a href="gym.html">健身房</a></li>
                                 </ul>
                             </li>
-
-                            <li><a href="newswim.html">游泳池</a></li>
+                            <li><a href="swim.html">游泳池</a></li>
                         </ul>
                     </li>
                     <li><a href="gym.html"><i class="fas"></i>&emsp;&emsp;體育室</a>
@@ -38,48 +44,62 @@
                         </ul>
                     </li>
                     <li><a href="everyone.html"><i class="fas"></i>&emsp;&emsp;網站人員介紹</a>
-                        <ul><li><a href="introduce.html">介紹影片</a></li></ul></li>
-                    <li><a href="from.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                        <ul>
+                            <li><a href="introduce.html">介紹影片</a></li>
+                        </ul>
                     </li>
-                </nav>
-
+                    <li><a href="form.html"><i class="fas"></i>&emsp;&emsp;聯繫我們</a>
+                    </li>
+                </div>
                 <label for="side-menu-switch">
                     <i class="fas fa-caret-right"></i>
                 </label>
             </ul>
         </div>
-    </header>
-    <h1 class="ground">韻律教室</h1>
-    <div class="pandw">
-	<img src="assets/images/dance.JPG" class="dance" width="600px" height="400px" 
-            onmouseover="this.src='assets/images/dance2.JPG'"
-            onmouseout="this.src='assets/images/dance.JPG'">
-    </div>
+    </aside>
 
-    <p class="word">為跆拳道社辦，也是有氧舞蹈及爵士舞的上課教室，為上課用教室，無對校外人士開放!若要使用需事先申請~
-   </p>
-    <p class="opentime">
-        <span class="open">開放時間：(無對外開放)</span><br>
-        <p class="borrow">場地借用方法<br>
-            1、可借用時間以學期為分界。<br>
-            2、場地借用採抽籤制。<br>
-            3、以抽籤方式決定登記場地先後順序。<br>
-            4、因逾時未參予抽籤單位，於抽籤會場外登記先後順序，待抽籤<br>
-            程序完畢後，體育室營運組再以電話聯絡逕行登記。<br></p>      
-    </p>
-            <footer>
-                <div class="footer">
-                    <h1 >Chung Yuan Christian University</h1>
-                    <p>Copyright © 2021 CYIM <br>
-                        32023 桃園市中壢區中北路200號 <br>
-                        Tel：+886-3-265-9999 , +886-3-456-317</p>
+    <!--介紹-->
+    <section>
+        <div class="box">
+            <div>
+                <h1 class="ground">韻律教室</h1>
+                <img src="assets/images/dance.JPG" class="dance"
+                    onmouseover="this.src='assets/images/dance2.JPG'" onmouseout="this.src='assets/images/dance.JPG'">
+            </div>
+            <div class="box2">
+                <div class="recount">
+                    <p class="word">為跆拳道社辦，也是有氧舞蹈及爵士舞的上課教室，為上課用教室，無對校外人士開放！<br>若要使用需事先申請～
+                    </p>
+                    <span class="open">開放時間：(無對外開放)</span><br>
+                    <p class="borrow">場地借用方法<br>
+                        1、可借用時間以學期為分界。<br>
+                        2、場地借用採抽籤制。<br>
+                        3、以抽籤方式決定登記場地先後順序。<br>
+                        4、因逾時未參予抽籤單位，於抽籤會場外登記先後順序，待抽籤<br>
+                        程序完畢後，體育室營運組再以電話聯絡逕行登記。<br>
+                    </p>
                 </div>
-                <div class="icon">
-                     <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
-                     <br>
-                     <br>
-                     <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
-                   </div>
-            </footer>
+                <a href="index.html"><img src="assets/images/back.PNG" class="back"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--版權列-->
+    <footer>
+        <div class="footerbox">
+            <div class="footer">
+                <h1>Chung Yuan Christian University</h1>
+                <p>Copyright © 2021 CYIM <br>
+                    32023 桃園市中壢區中北路200號 <br>
+                    Tel：+886-3-265-9999 , +886-3-456-317</p>
+            </div>
+            <div class="icon">
+                <div class="txt3"><a href="https://www.cycu.edu.tw/campus.html" target="blank">中原地圖</a></div>
+                <div class="txt3"><a href="https://www.cycu.edu.tw/map.html" target="blank">交通地圖</a></div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

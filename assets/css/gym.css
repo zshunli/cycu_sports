@@ -1,132 +1,88 @@
-.first{
-    
-  float: left;
-    height: 500px;
-    width: 500px;
-    padding: 45px;
-}
-
-.second{
-    height: 500px;
-    width: 500px;
-    float:right;
-    padding: 45px;
-    margin: 60px;
-}
-
-
-
-
-
-.color-lump{
+/*.color-lump {
     height: 70px;
     width: 100%;
-    padding: 20px;
+    padding: 20px; 
     background-color: lightblue;
-    
+}*/
+section{
+    min-height: calc(100% - 50px);
 }
 
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 50px;
+}
 
+.box2{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+}
 
-
-
-.t{
-    height: 2px;
-    text-decoration: underline;
-    font-size: 30px;
+.photo {
+    height: 500px;
+    width: 500px;
     padding: 45px;
-    
-  
 }
-p{
+
+.box h1{
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+h2 {
     letter-spacing: 5px;
 }
 
-.pp{
+.box, .grid p{
     letter-spacing: 5px;
-   margin-left: 30px;
-    
-
-   
-   
+    line-height: 1.5;
 }
-img{
+
+.hb {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.grid:hover .image1,
+.grid:focus .image1 {
+    transform: scale(1.5, 1.5);
+}
+
+.grid:hover .image2,
+.grid:focus .image2 {
+    transform: rotate(90deg);
+}
+
+.grid:hover .image3,
+.grid:focus .image3 {
+    transform: translateY(-50%);
+}
+
+.grid2:hover .image4,
+.grid2:focus .image4 {
+    transform: scaleY(1.5);
+    transition: all .8s ease;
+}
+
+.image1, .image2, .image3,.image4 {
+    transition: transform 1s ease;
     width: 200px;
     height: 150px;
-    float: left;
-    position: relative;
-    top: 10px;
-    left: 10px;
-    z-index: 1;
-}
-img.two{
-    width: 200px;
-    height: 150px;
-    float: left;
-    position: relative;
-    top: -200px;
-    left: 150px;
-    z-index: 1;
-}
-.hb{
-    
-text-align: center;
 }
 
-
-.button{
-  width:350px;
-  height: 250px;
-  text-align: center;
-  color:#fff;
-  font-size:40px;
-  z-index: 2;
-  top: 10px;
-  left: 10px;
-  background-color: lightslategray;
-  z-index: -1;
+.name{
+    margin: 0;
 }
-.button:hover .hover{
-  display:block;
-
-
-}
-.hover{
-  display:none;
-  background-color:#ffb2b2;
-  
-
-}
-.button2{
-  width:300px;
-  height: 250px;
-  text-align: center;
-  color:#fff;
-  font-size:40px;
-  z-index: 2;
-  position: relative;
-  top: -100px;
-  left: 200px;
-}
-.button2:hover .hover2{
-  display:block;
-  
-
-}
-.hover2{
-  display:none;
-  /*background-color:#ffb2b2;*/
-  color: black;
-}
-
-footer{
-  position: relative;
-  margin-bottom: 0;
-}
-.icon{
-  position: relative;
-  padding-top: 50px;
-}
-
-    
-

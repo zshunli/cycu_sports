@@ -1,60 +1,5 @@
-.footer{
-    width: 95%;
-    height: 100px;
-    background-color:#ADD8E6;
-    text-align: center;
-    color: #fff;
-    padding: 33px;
-    font-family: sans-serif;
-    z-index: 1000;
-    position: absolute;
-    top:100%;
-}
-
-.footer h1{
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-.footer p{
-    font-size: 12px;
-}
-.icon{   
-    position: absolute;
-    left: 85%;
-    top: 105%;
-    z-index: 2000;
-  }
-.icon a:link{
-    text-decoration: none;
-    color:white;
-}
-.icon a:visited{
-    color: white;
-}
-body{
-    background-image: url(../images/bg.jpg); 
-    background-size:1045px auto  ;
-   background-repeat: repeat-x;
-}
-.table{
-    position: absolute;
-    top:25%;
-    left:5%;
-   
-}
-.table:hover{
-    transform: scale(1.1);	
-    }
-.ground{
-    position: absolute;
-    top:12%;
-    left: 5%;
-    background-color:#F4A460;
-    color: white;
-    border-radius: 1cm;
-    padding: 6px;
-    font-size:25px;
-    
+section{
+    min-height: calc(100% - 50px);
 }
 
 @font-face {
@@ -62,47 +7,63 @@ body{
     src: url('../fonts/清松手寫體2.woff') format("woff"),
         url('../fonts/fu/清松手寫體2.ttf') format("truetype"),
         url('../fonts/清松手寫體2.eot') format("embedded-opentype");
-  }
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    top: 150px;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ground{
+    background-color:#F4A460;
+    color: white;
+    border-radius: 1cm;
+    padding: 6px;
+    font-size:25px;
+    width: 100px;
+}
+
+.table, .recount{
+    width:650px;
+}
+
+.table:hover{
+    transform: scale(1.1);	
+}
 
 .word {
     font-family: '清松手寫體2', Times, serif;
     text-align: left;
-    font-size: 20px;
-    padding-left: 40px;
-    padding-top: 60px;
-    position: absolute;
+    font-size: 25px;
     right: 180px;
-    top: 15%;
-    width: 525px;
-    height: 350px;
     color: rgb(65, 65, 65);
     font-weight: bold;
+    margin: 85px 0 20px 0;
 }
 .open{
     font-family: '清松手寫體2', Times, serif;
     font-size: 40px;
-    padding-left: 40px;
-    padding-top: 60px;
-    position: absolute;
-    right: 180px;
-    top: 32%;
-    width: 525px;
-    height: 350px;
     color: rgb(65, 65, 65);
 }
-
 
 .borrow{  
     font-family: '清松手寫體2', Times, serif;
     text-align: left;
     font-size: 50px;
-    padding-left: 40px;
-    padding-top: 60px;
-    position: absolute;
-    right: 180px;
-    top: 42%;
-    width: 525px;
-    height: 350px;
     color: rgb(65, 65, 65);
     font-weight: bold;
+}
+
+.gohome{
+    height: 80px;
+    padding: 15px;
 }

@@ -1,55 +1,59 @@
-/*表單*/
-body{
-       background-image: url(../images/bg.jpg); 
-       background-size: 1045px auto  ;
-           
-    }
+section{
+    min-height: calc(100% - 50px);
+}
 
-span{
+/*表單*/
+.form{
+    text-align: center;
+    padding: 100px;
+}
+
+span {
     font-weight: bold;
     border-bottom: 2px #8B4513 dashed;
-    }
+}
 
-    table{
-    border: 5px #FFA488 dashed ;
-    padding: 20px;
+table {
+    border: 5px #FFA488 dashed;
     background-color: #FFDDAA;
-    position: relative; top: 137px;
-    z-index: -1;
-    }
-    
-    td{
+    margin: auto;
     padding: 20px;
-    }
+}
 
-    input{
-    border:10;
-    background-color:lightyellow;
-    color:black;
-    border-radius:10px;
-    cursor:pointer;
-    }
-    
-    input:hover{
-    color:#003C9D;
-    background-color:#fff;
-    border:2px #003C9D solid;
-    }
-    /*表單內容*/
+tr{
+    text-align: center;
+}
 
-    /*按鈕*/
-    input.button{
-        border:none;/*2px #FFA488 dashed;*/
-        position: relative; left: 640px; top:150px;
-        font-size: 20px;
-        font-weight: bold;
-        background-color: #CD853F;
-        color: white;
-        width:120px;
-        height: 40px;
-       
-    }
-    /*按鈕*/
-    
-    
-    
+td {
+    padding: 20px;
+}
+
+.btns{
+    padding: 20px;
+}
+
+input {
+    border: 10;
+    background-color: lightyellow;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input:hover {
+    color: #003C9D;
+    background-color: #fff;
+    border: 2px #003C9D solid;
+}
+/*表單內容*/
+
+/*按鈕*/
+input.button {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #CD853F;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+/*按鈕*/
