@@ -72,25 +72,18 @@
 
 .title2 {
   text-align: right;
-  padding: 30px;
+  padding: 20px;
   font-family: 新細明體;
   font-size: 30px;
   color: #4682B4;
   font-weight: 10px;
-  --x-offset: -0.0625em;
-  --y-offset: 0.0625em;
-  --stroke: 0.025em;
-  --background-color: white;
-  --stroke-color: lightblue;
-  text-shadow:
-    var(--x-offset) var(--y-offset) 0px var(--background-color),
-    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
 }
 
 .word {
   text-align: right;
   padding: 0 30px 0 0;
   clear: right;
+  font-size: 24px;
 }
 
 .divide{
@@ -108,14 +101,6 @@
   font-family: 新細明體;
   font-size: 30px;
   color: #4682B4;
-  --x-offset: -0.0625em;
-  --y-offset: 0.0625em;
-  --stroke: 0.025em;
-  --background-color: white;
-  --stroke-color: lightblue;
-  text-shadow:
-    var(--x-offset) var(--y-offset) 0px var(--background-color),
-    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke)) 0px var(--stroke-color);
 }
 
 .teacher1 {
@@ -123,7 +108,7 @@
   background-color: #4682B4;
   background-size: auto;
   margin: 30px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   text-align: center;
 }
