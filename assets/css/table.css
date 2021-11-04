@@ -43,7 +43,7 @@ section{
 .word {
     font-family: '清松手寫體2', Times, serif;
     text-align: left;
-    font-size: 25px;
+    font-size: 24px;
     right: 180px;
     color: rgb(65, 65, 65);
     font-weight: bold;
@@ -64,6 +64,6 @@ section{
 }
 
 .gohome{
-    height: 80px;
+    height: 150px;
     padding: 15px;
 }

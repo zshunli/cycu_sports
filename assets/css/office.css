@@ -127,3 +127,56 @@
   color: white;
   text-align: center;
 }
+
+/*辦公室人員*/
+.color-lump{
+  height: 80px;
+  width: 100%;
+  background-color: rgb(117, 145, 202);
+  color: white;
+  margin: 20px 0;
+}
+
+div.a{
+  text-align: center;
+  font-size: 50px;
+}
+
+.p1{
+ padding: 30px;
+ float: left;
+ margin-bottom: 70%;
+}
+
+.talk{
+  font-size: 25px;
+  text-shadow:   2px 2px orange;
+  font-weight: bolder;
+}
+
+.text{
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration:  overline;
+}
+
+.text2{
+  position: relative;
+  font-size: 20px;
+  font-weight: bolder;
+  text-decoration:  underline;
+}
+
+.text3{
+  padding-left: 125px;
+}
+
+table{
+  width: 80%;
+  border: 2px black solid;
+}
+
+tr,th,td{
+  border: 1px black solid;
+}

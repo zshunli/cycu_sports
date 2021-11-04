@@ -1,5 +1,6 @@
 section {
   min-height: calc(100% - 50px);
+  margin: 0 100px;
 }
 
 .position{
@@ -16,13 +17,25 @@ section {
   border: #dad1c9 2px dotted;
   background-color: #FAF0E6;
   border-radius: 0.5cm;
+  font-size: 24px;
   line-height: 1.5;
-  margin-left: 30px;
   padding: 10px;
+  margin: 20px 270px 20px 20px;
+}
+
+.text-member2 {
+  border: #dad1c9 2px dotted;
+  background-color: #FAF0E6;
+  border-radius: 0.5cm;
+  font-size: 24px;
+  line-height: 1.5;
+  padding: 10px;
+  margin: 20px 20px 20px 270px;
 }
 
 img{
   margin: 30px;
+  width:400px;
 }
 
 .img-member1:hover {

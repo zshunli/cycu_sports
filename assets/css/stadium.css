@@ -106,3 +106,9 @@ input:hover {
 	background-color: #fff;
 	border: 2px #003C9D solid;
 }
+.text a:hover{
+	color: pink;
+	position: relative;
+	left: 10px;
+	bottom: -10px;
+}

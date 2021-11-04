@@ -14,7 +14,7 @@ section {
     justify-content: space-around;
     align-items: stretch;
     position: relative;
-    top: 100px;
+    top: 50px;
 }
 
 .box2{
@@ -47,7 +47,7 @@ section {
 .word {
     font-family: '清松手寫體2', Times, serif;
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(65, 65, 65);
     margin: 10px;
 }
@@ -63,6 +63,6 @@ section {
 }
 
 .gohome{
-    height: 80px;
-    padding: 15px;
+    height: 100px;
+    padding: 0;
 }

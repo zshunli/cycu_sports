@@ -11,7 +11,7 @@ body {
   margin-bottom: 40px;
   width: 1200px;
   height: 600px;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .img_box {
@@ -79,12 +79,12 @@ ul.img_box {
 }
 
 .sel_box .cur {
-  background-color: red!important;
+  background-color: red !important;
   transform: scale(1.3);
 }
 
 /*組合兩個div*/
-.studiumbox{
+.studiumbox {
   zoom: 1;
   display: flex;
   justify-content: space-between;
@@ -109,7 +109,7 @@ ul.img_box {
   font-size: 30px;
 }
 
-.studium img{
+.studium img {
   width: 600px;
   height: 450px;
 }
@@ -121,12 +121,21 @@ ul.img_box {
   padding: 30px 0 0 0;
 }
 
-.studium input{
-  width: 150px;
-  background-color: #e9ebf0;
-  border-radius: 3px;
-  border-color: #3136389c;
-  padding: 10px;
+.button {
+  background-color: none;
+  font-family: Comic Sans MS;
+  font-size: 30px;
+  border: 5px #9999FF dashed;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: lightyellow;
+  cursor: pointer;
+}
+
+input:hover {
+  color: #003C9D;
+  background-color: #fff;
+  border: 2px #003C9D solid;
 }
 
 /*最新消息*/
@@ -145,11 +154,11 @@ ul.img_box {
   font-size: 30px;
 }
 
-marquee ul{
+marquee ul {
   padding: 25px;
 }
 
-.news li a{
+.news li a {
   margin-right: 100px;
   position: relative;
   color: inherit;
@@ -163,50 +172,58 @@ marquee ul{
 }
 
 /*快速連結*/
-.box2{
+.box2 {
   display: flex;
   align-items: center;
+  margin: 100px;
 }
-.wrap{
+
+.wrap {
   width: 1140px;
   display: flex;
   justify-content: space-between;
   margin: auto;
 }
-.item{
+
+.item {
   width: 300px;
   margin: 40px;
   text-align: center;
-  background-color: #EBEBEB ;
+  background-color: #EBEBEB;
   transform: translateY(0px);
   transition: .5s;
   border-radius: 20px;
 }
-.item img{
+
+.item img {
   width: 300px;
   height: 330px;
   vertical-align: middle;
   border-radius: 20px;
 }
-.item h2{
+
+.item h2 {
   border-bottom: 1px solid rgb(143, 143, 143);
   margin-bottom: .3em;
   padding-bottom: 15px;
   letter-spacing: 5px;
 }
-.item p{
+
+.item p {
   padding-top: 8px;
   line-height: 1.6;
   letter-spacing: 4px;
   font-size: 14px;
 }
-.item .txt{
+
+.item .txt {
   padding: 20px;
-  position: relative;;
+  position: relative;
+  ;
 }
 
-.item .txt:before{
-  content: ''; 
+.item .txt:before {
+  content: '';
   position: absolute;
   width: 0;
   height: 0;
@@ -217,22 +234,27 @@ marquee ul{
   border-right: 150px solid #EBEBEB;
   transform: translateY(-100%);
 }
-.item:hover{
+
+.item:hover {
   transform: translateY(-30px);
 }
-.item:hover .txt:before{
+
+.item:hover .txt:before {
   border-left: 150px solid #7a8495;
   border-right: 150px solid #7a8495;
 }
-.item:hover .txt{
+
+.item:hover .txt {
   background-color: #7a8495;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.item:hover h2{
+
+.item:hover h2 {
   color: #fff;
   border-bottom: 1px solid #fff;
 }
-.item:hover p{
+
+.item:hover p {
   color: #fff;
 }

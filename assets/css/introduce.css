@@ -1,27 +1,26 @@
 section {
     min-height: calc(100% - 50px);
 }
+
 /*照片+影片*/
-.photo{
-    text-align: center;
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column
 }
 
-.us img{
-    position: relative;
-    top: 40px;
-    width: 400px;
-    height: 350px;
+.photo {
+    width: 700px;
 }
-img:hover{
-    transform: scale(1.1);	
-    }
-.video{
-    text-align: center;
+
+img:hover {
+    transform: scale(1.1);
 }
-iframe{
+
+.part{
+    width: 300px;
     position: absolute;
-    top:45%;
-    left:30%;
-    z-index: 2;
+    right: 10%;
+    bottom: 0%;
 }
 /*照片+影片*/

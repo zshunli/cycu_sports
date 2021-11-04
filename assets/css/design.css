@@ -1,0 +1,30 @@
+.design{
+    font-size: 50px;
+    background-color: #9999FF;
+    font-family:清松手寫體2;
+    text-align: center;
+    margin: 0;
+}
+.border{
+    margin-top: 10px;
+    width: 100%;
+    height: 10px;
+    background-color: #9999FF;
+}
+.text{
+    font-size: 30px;
+    font-family:清松手寫體2;
+    text-align: left;
+    margin: 50px 100px 50px 100px;
+}
+
+.video{
+    text-align: center;
+}
+
+.photo{
+    width: 300px;
+    position: absolute;
+    right: 15%;
+    top: 55%;
+}
