@@ -69,3 +69,9 @@ section{
     height: 150px;
     margin: 0;
 }
+
+.back:hover, 
+.back:focus  {
+    transition: .8s;
+    transform: rotate(45deg);
+}

@@ -66,3 +66,9 @@ section {
     height: 100px;
     padding: 0;
 }
+
+.gohome:hover, 
+.gohome:focus  {
+    transition: .8s;
+    transform: rotate(45deg);
+}

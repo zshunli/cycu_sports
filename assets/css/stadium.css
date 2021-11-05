@@ -18,24 +18,10 @@ div.sentence{
 	font-family: Comic Sans MS;
 	font-size: 30px;
 	animation-duration: 5s;
-	animation-duration: 5s;
-	animation-name: slidein;
 	animation-name: slidein;	
 }
 
 @keyframes slidein {
-	from {
-		padding-left: 100%;
-		width: 300%;
-	}
-	  
-	to {
-		padding-left: 0%;
-		width: 100%;
-	}
-	}
-	  
-	@keyframes slidein {
 	from {
 		padding-left: 100%;
 		width: 300%;

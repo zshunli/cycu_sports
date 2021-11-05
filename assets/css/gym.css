@@ -1,15 +1,15 @@
-section{
+section {
     min-height: calc(100% - 50px);
 }
 
-.box{
+.box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 50px;
 }
 
-.box2{
+.box2 {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -22,7 +22,7 @@ section{
     padding: 45px;
 }
 
-.box h1{
+.box h1 {
     text-decoration: underline;
     font-weight: bold;
     letter-spacing: 10px;
@@ -32,14 +32,52 @@ h2 {
     letter-spacing: 5px;
 }
 
-.box, .grid, .grid2 p{
+.box,
+.grid,
+.grid2 p {
     font-size: 24px;
     letter-spacing: 5px;
     line-height: 1.5;
 }
 
+div.box2 p,
+div.box2 h1,
+div.box2 h2 {
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        padding-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        padding-left: 0%;
+        width: 100%;
+    }
+}
+
 .hb {
     text-align: center;
+}
+
+div.sentence p {
+    animation-duration: 5s;
+    animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+    from {
+        padding-right: 100%;
+        width: 300%;
+    }
+
+    to {
+        padding-right: 0%;
+        width: 100%;
+    }
 }
 
 .button {
@@ -71,12 +109,15 @@ h2 {
     transition: all .8s ease;
 }
 
-.image1, .image2, .image3,.image4 {
+.image1,
+.image2,
+.image3,
+.image4 {
     transition: transform 1s ease;
     width: 200px;
     height: 150px;
 }
 
-.name{
+.name {
     margin: 0;
 }
